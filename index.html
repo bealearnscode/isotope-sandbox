@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Isotope Sandbox</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-float.css"/>
 </head>
 <body>
-    <div class="button-group filter-button-group">
-      <button class="button" data-filter="*">show all</button>
-      <button class="button" data-filter=".undergraduate">Undergraduate</button>
-      <button class="button" data-filter=".graduate">Graduate</button>
-      <button class="button" data-filter=".doctoral">Doctoral</button>
-      <button class="button" data-filter=".major">Majors</button>
-      <button class="button" data-filter=".minor">Minors</button>
-      <button class="button" data-filter=".certificate">Certificate</button>
-    </div>
-    <div class="grid">
+    <div class="container">
+       <div class="row">
+            <div class="button-group filter-button-group">
+              <button class="button" data-filter="*">show all</button>
+              <button class="button" data-filter=".undergraduate">Undergraduate</button>
+              <button class="button" data-filter=".graduate">Graduate</button>
+              <button class="button" data-filter=".doctoral">Doctoral</button>
+              <button class="button" data-filter=".major">Majors</button>
+              <button class="button" data-filter=".minor">Minors</button>
+              <button class="button" data-filter=".certificate">Certificate</button>
+            </div>
+        </div>
+    <div class="row grid">
         <div class="grid-item undergraduate minor">Art</div>
         <div class="grid-item undergraduate major">Art & Design</div>
         <div class="grid-item undergraduate graduate major">Athletic Training</div>
@@ -81,6 +84,7 @@
         <div class="grid-item graduate">Teaching the Developing Child</div>
         <div class="grid-item undergraduate major">Theatre</div>
         <div class="grid-item undergraduate minor">Women and Gender Studies</div>
+    </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.5/isotope.pkgd.js"></script>
