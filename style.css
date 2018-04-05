@@ -67,12 +67,9 @@
 
 .grid-item {
     background-color: #FF0000;
-    color: #fff;
-    /*width: 25%;*/
-    position: relative;
-    float: left;
     width: 150px;
     height: 150px;
     margin: 5px;
     padding: 10px;
+    text-align: center;
 }
