@@ -59,16 +59,17 @@
     border-radius: 0 0.5em 0.5em 0;
 }
 
+.grid {
+  padding-left: 75px;
+  padding-right: 50px;
+}
 
 .grid-item {
-    background-color: #FF0000;
+    background-color: #FF0000; //bg will be a photo on ESU site
     color: #fff;
-    width: 140px;
-    height: 140px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 12.5px;
     padding: 10px;
     text-align: center;
 }
