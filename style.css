@@ -65,13 +65,21 @@
 }
 
 .grid-item {
-    background-color: #FF0000; //bg will be a photo on ESU site
+    background-color: #000; //bg will be a photo on ESU site
+    border: 2px solid black;
     color: #fff;
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 32px;
     width: 150px;
     height: 150px;
     margin: 12.5px;
-    padding: 10px;
+    padding-top: 15px;
     text-align: center;
+    
 }
 
 /*
