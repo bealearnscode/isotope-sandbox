@@ -59,11 +59,6 @@
     border-radius: 0 0.5em 0.5em 0;
 }
 
-.grid {
-  padding-left: 75px;
-  padding-right: 50px;
-}
-
 .grid-item {
     background-color: #000; //bg will be a photo on ESU site
     border: 2px solid black;
@@ -72,12 +67,12 @@
     font-family: 'Work Sans', sans-serif;
     font-size: 1.125em;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 20px;
     margin-bottom: 32px;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     margin: 12.5px;
-    padding-top: 15px;
+    padding: 15px 7.5px;
     text-align: center;
     
 }
