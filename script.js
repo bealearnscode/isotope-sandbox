@@ -1,27 +1,21 @@
-// init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: '.item'
-});
-
-
 $(function(){
 
-  var $container = $('.container'),
+  let $grid = $('.grid'),
       $checkboxes = $('.filter-checkbox-group input');
   
-  $container.isotope({
+  $grid.isotope({
     itemSelector: '.grid-item'
   });
   
   $checkboxes.change(function(){
-    var filters = [];
-    // get checked checkboxes values
+    let filters = [];
+    // get value of checked boxes
     $checkboxes.filter(':checked').each(function(){
       filters.push( this.value );
     });
     // ['.undergraduate', '.minor'] -> '.undergraduate, .minor'
     filters = filters.join(', ');
-    $container.isotope({ filter: filters });
+    $grid.isotope({ filter: filters });
   });
   
 });
