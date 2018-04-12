@@ -3,97 +3,95 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-/*.checkbox-group {*/
-/*  margin-bottom: 20px;*/
-/*}*/
+.checkbox-group {
+  margin-bottom: 20px;
+}
 
-/*.checkbox-group:after {*/
-/*  content: '';*/
-/*  display: inline-block;*/
-/*  clear: both;*/
-/*}*/
+.checkbox-group:after {
+  content: '';
+  display: inline-block;
+  clear: both;
+}
 
-/*.checkbox input[type="checkbox"] {*/
-/*    opacity: 0;*/
-/*}*/
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
 
-/*.checkbox label {*/
-/*    position: relative;*/
-/*    display: inline-block;*/
+.checkbox label {
+    position: relative;
+    display: inline-block;
     
     /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
-/*    padding-left: 22px;*/
-/*}*/
+    padding-left: 22px;
+}
 
-/*.checkbox label::before,*/
-/*.checkbox label::after {*/
-/*    position: absolute;*/
-/*    content: "";*/
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
     
     /*Needed for the line-height to take effect*/
-/*    display: inline-block;*/
-/*}*/
+    display: inline-block;
+}
 
 /*Outer box of the fake checkbox*/
-/*.checkbox label::before{*/
-/*    height: 16px;*/
-/*    width: 16px;*/
+.checkbox label::before{
+    height: 16px;
+    width: 16px;
     
-/*    border: 1px solid;*/
-/*    left: 0px;*/
+    border: 1px solid;
+    left: 0px;
     
-    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
-     *to vertically center it.
-     */
-/*    top: 3px;*/
-/*}*/
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border*/
+     /*to vertically center it.*/
+     
+    top: 3px;
+}
 
 /*Checkmark of the fake checkbox*/
-/*.checkbox label::after {*/
-/*    height: 5px;*/
-/*    width: 9px;*/
-/*    border-left: 2px solid;*/
-/*    border-bottom: 2px solid;*/
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
     
-/*    transform: rotate(-45deg);*/
+    transform: rotate(-45deg);
     
-/*    left: 4px;*/
-/*    top: 7px;*/
-/*}*/
+    left: 4px;
+    top: 7px;
+}
 
 /*Hide the checkmark by default*/
-/*.checkbox input[type="checkbox"] + label::after {*/
-/*    content: none;*/
-/*}*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
 
 /*Unhide on the checked state*/
-/*.checkbox input[type="checkbox"]:checked + label::after {*/
-/*    content: "";*/
-/*}*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
 
 /*Adding focus styles on the outer-box of the fake checkbox*/
-/*.checkbox input[type="checkbox"]:focus + label::before {*/
-/*    outline: rgb(59, 153, 252) auto 5px;*/
-/*}*/
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
 
 .grid-item {
     background-color: #000; //bg will be a photo on ESU site
-    border: 2px solid black;
-    color: #fff;
     display: block;
-    font-size: 1.125em;
-    font-weight: 500;
-    line-height: 20px;
     margin-bottom: 32px;
     width: 200px;
     height: 200px;
     margin: 12.5px;
     /*padding: 15px 7.5px;*/
-    text-align: center;
     
 }
 
-h3 {
+.program-title {
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -102,105 +100,6 @@ h3 {
 
 
 img {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    opacity: 0.45;
+    filter: alpha(opacity=45); /* For IE8 and earlier */
 }
-
-
-
-
-.button {
-  display: inline-block;
-  padding: 0.5em 1.0em;
-  background: #EEE;
-  border: none;
-  border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-  color: #222;
-  font-family: sans-serif;
-  font-size: 16px;
-  text-shadow: 0 1px white;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
-}
-
-.button:active {
-  background-color: #28F;
-}
-
-
-.button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
-}
-
- ---- button-group ---- 
-.button-group .button {
-  float: left;
-  border-radius: 0;
-  margin-left: 0;
-  margin-right: 1px;
-}
-
-
-
-
-/*.directional_tile {*/
-/*    @extend %navigational_tile;*/
-
-/*    .card-section a {*/
-/*      float: none;*/
-/*      display: block;*/
-/*      text-align: center;*/
-/*      margin: 0.5rem 0;*/
-
-/*      // Font sizes in between a link and a headline, given the purpose of navigational tiles.*/
-/*      font-size: 16px;*/
-/*      line-height: 20px;*/
-
-/*      @include breakpoint(xlarge) {*/
-/*        font-size: 18px;*/
-/*      }*/
-
-/*    }*/
-/*  }*/
-  
-  
-/*  page_content %navigational_tiles {*/
-/*  margin-bottom: 1em;*/
-
-/*  %navigational_tile .card-section {*/
-/*    padding: rem-calc(8);*/
-
-/*    h2 {*/
-/*      font-size: rem-calc(15);*/
-/*      margin-bottom: 0;*/
-
-/*      @include breakpoint(xlarge) {*/
-/*        font-size: rem-calc(17);*/
-/*      }*/
-/*    }*/
-
-/*    p {*/
-/*      font-size: rem-calc(14);*/
-/*      line-height: rem-calc(17);*/
-
-/*      @include breakpoint(xlarge) {*/
-/*        font-size: rem-calc(16);*/
-/*        line-height: rem-calc(22);*/
-/*      }*/
-/*    }*/
-
-/*    a {*/
-/*      @extend .card_footer_action;*/
-
-/*      font-size: rem-calc(14);*/
-/*    }*/
-
-/*  }*/
-  
-/**/  */
