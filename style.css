@@ -70,30 +70,38 @@
     outline: rgb(59, 153, 252) auto 5px;
 }
 
-.grid-item {
+.card {
     background-color: #000; //bg will be a photo on ESU site
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 0;
+    background: #ffffff;
+    box-shadow: none;
+    overflow: hidden;
+    width: 346.656px;
+    height: 225.328px;
+    margin: 5px;
+}
+
+.card-section {
+    padding: 8px;
+    height: 52px;
+}
+
+a {
+     color: #000;
+    float: none;
     display: block;
-    margin-bottom: 32px;
-    width: 200px;
-    height: 200px;
-    margin: 12.5px;
-    /*padding: 15px 7.5px;*/
-    
+    text-align: center;
+    margin: 0.5rem 0;
 }
 
 .program-title {
-    color: #fff;
+    color: #000;
     font-size: 1.125em;
     font-weight: 500;
     line-height: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
-
-
-img {
-    opacity: 0.45;
-    filter: alpha(opacity=45); /* For IE8 and earlier */
-}
