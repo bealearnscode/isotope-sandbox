@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 .checkbox-group {
@@ -70,38 +71,39 @@
     outline: rgb(59, 153, 252) auto 5px;
 }
 
+.grid {
+    border: 1px solid black;
+}
+
 .card {
     background-color: #000; //bg will be a photo on ESU site
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
     margin-bottom: 1.5rem;
     border: none;
     border-radius: 0;
     background: #ffffff;
     box-shadow: none;
     overflow: hidden;
-    width: 346.656px;
-    height: 225.328px;
-    margin: 5px;
+    margin-right: 0.9375rem;
+    margin-left: 0.9375rem;
 }
 
 .card-section {
-    padding: 8px;
-    height: 52px;
+    border: 1px solid black;
 }
 
-a {
-     color: #000;
+h3 a {
+    color: #000;
     float: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
     display: block;
     text-align: center;
+    text-decoration: underline;
     margin: 0.5rem 0;
 }
 
-.program-title {
+h3 a:hover {
     color: #000;
-    font-size: 1.125em;
-    font-weight: 500;
-    line-height: 20px;
-  }
+    text-decoration: none;
+}
