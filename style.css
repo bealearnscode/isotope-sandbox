@@ -73,6 +73,7 @@
 
 .grid {
     border: 1px solid black;
+    overflow: hidden;
 }
 
 .card {
@@ -80,8 +81,9 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
-    margin:1rem 0.9375rem;
+    margin: 1rem 0.9375rem;
     max-width: 253px;
+    overflow: hidden;
 }
 
 .card-section {
@@ -92,7 +94,7 @@
 h3 a {
     color: #000;
     float: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 20px;
     display: block;
@@ -104,4 +106,21 @@ h3 a {
 h3 a:hover {
     color: #000;
     text-decoration: none;
+}
+
+@media screen and (max-width: 570px)
+  { 
+      * {
+          box-sizing: border-box;
+      }
+      .card {
+          margin-bottom: 5px; /*half the size of large screens*/
+      }
+      .card-section {
+          height: 90px;
+          padding: none;
+      }
+      h3 a {
+          font-size:0.750rem;
+      }
 }
