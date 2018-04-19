@@ -76,6 +76,10 @@
     overflow: hidden;
 }
 
+.grid-sizer {
+    width: 100%;
+}
+
 .card {
     background-color: #000; //bg will be a photo on ESU site
     border: none;
