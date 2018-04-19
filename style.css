@@ -77,14 +77,10 @@
 
 .card {
     background-color: #000; //bg will be a photo on ESU site
-    margin-bottom: 1.5rem;
     border: none;
     border-radius: 0;
-    background: #ffffff;
     box-shadow: none;
-    overflow: hidden;
-    margin-right: 0.9375rem;
-    margin-left: 0.9375rem;
+    margin:1rem 0.9375rem;
     max-width: 253px;
 }
 
