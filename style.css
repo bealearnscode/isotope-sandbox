@@ -85,10 +85,12 @@
     overflow: hidden;
     margin-right: 0.9375rem;
     margin-left: 0.9375rem;
+    max-width: 253px;
 }
 
 .card-section {
     border: 1px solid black;
+    height: 105px;
 }
 
 h3 a {
