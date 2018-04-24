@@ -71,26 +71,46 @@
     outline: rgb(59, 153, 252) auto 5px;
 }
 
-.grid {
-    border: 1px solid black;
-    overflow: hidden;
-}
-
+/* clear fix */
 .grid:after {
   content: '';
   display: block;
   clear: both;
 }
 
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+.card,
+.grid-sizer {
+  width: 20%;
+}
+
 .card {
-    background-color: #000; //bg will be a photo on ESU site
+    background-color: #000; /*bg will be a photo on ESU site*/
     border: none;
     border-radius: 0;
     box-shadow: none;
-    margin: 1rem 0.9375rem;
+    float: left;
     max-width: 253px;
-    overflow: hidden;
+  /*height: 100px;*/
 }
+
+/*.grid {*/
+/*    border: 1px solid black;*/
+/*    overflow: hidden;*/
+/*}*/
+
+
+/*.grid.-item {*/
+/*    background-color: #000; //bg will be a photo on ESU site*/
+/*    border: none;*/
+/*    border-radius: 0;*/
+/*    box-shadow: none;*/
+/*    margin: 1rem 0.9375rem;*/
+/*    max-width: 253px;*/
+/*    overflow: hidden;*/
+/*}*/
 
 .card-section {
     border: 1px solid black;
@@ -128,7 +148,7 @@ h3 a:hover {
       }
       .card-section {
           height: 90px;
-          padding: none;
+          padding: 0;
       }
       h3 a {
           font-size:0.750rem;

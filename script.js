@@ -9,8 +9,11 @@ $( function() {
     // use imagesLoaded, instead of window.load
     $grid.imagesLoaded( function() {
         $grid.isotope({
-          itemSelector: '.grid-item',
-          layoutMode: 'packery'
+         itemSelector: '.grid-item',
+         percentPosition: true,
+        masonry: {
+          columnWidth: '.grid-sizer'
+        }
     });
     
     $checkboxes.change(function(){
