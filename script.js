@@ -10,10 +10,7 @@ $( function() {
     $grid.imagesLoaded( function() {
         $grid.isotope({
           itemSelector: '.grid-item',
-          layoutMode: 'masonryHorizontal',
-            masonryHorizontal: {
-              columnWidth: 100
-            }
+          layoutMode: 'packery'
     });
     
     $checkboxes.change(function(){
