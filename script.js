@@ -9,9 +9,11 @@ $( function() {
     // use imagesLoaded, instead of window.load
     $grid.imagesLoaded( function() {
         $grid.isotope({
-          layoutMode: 'fitColumns',
-          itemSelector: '.grid-item'
-        });
+          layoutMode: 'masonryHorizontal',
+          itemSelector: '.grid-item',
+          masonryHorizontal: {
+            rowHeight: 100
+          }
     });
     
     $checkboxes.change(function(){
@@ -24,6 +26,7 @@ $( function() {
     filters = filters.join(', ');
     $grid.isotope({ filter: filters });
   });
+    });
 });
 
 
