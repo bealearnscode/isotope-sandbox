@@ -76,8 +76,10 @@
     overflow: hidden;
 }
 
-.grid-sizer {
-    width: 100%;
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .card {
