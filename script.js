@@ -4,15 +4,14 @@
 $( function() {
     // now doc is ready, make selection
     // use another selector, not .isotope,
-    // since that is dynamically added in Isotope v1
-    var $container = $('.grid');
-        $checkboxes = $('.filter-checkbox-group input');
+    var $grid = $('.grid');
+    var $checkboxes = $('.filter-checkbox-group input');
     // use imagesLoaded, instead of window.load
-    $container.imagesLoaded( function() {
-        $container.isotope({
+    $grid.imagesLoaded( function() {
+        $grid.isotope({
           layoutMode: 'fitRows'
         });
-    })
+    });
     
     $checkboxes.change(function(){
     let filters = [];
@@ -22,7 +21,7 @@ $( function() {
     });
     // ['.undergraduate', '.minor'] -> '.undergraduate, .minor'
     filters = filters.join(', ');
-    $container.isotope({ filter: filters });
+    $grid.isotope({ filter: filters });
   });
 });
 
