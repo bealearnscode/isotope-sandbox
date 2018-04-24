@@ -9,7 +9,8 @@ $( function() {
     // use imagesLoaded, instead of window.load
     $grid.imagesLoaded( function() {
         $grid.isotope({
-          layoutMode: 'fitRows'
+          layoutMode: 'fitColumns',
+          itemSelector: '.grid-item'
         });
     });
     
