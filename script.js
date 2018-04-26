@@ -8,7 +8,7 @@ $(document).ready(function(){
       layoutMode: 'masonry',
       masonry: {
           isFitWidth: true,
-          isInitLayout: true
+          // isInitLayout: true
       }
     });
   }); 
