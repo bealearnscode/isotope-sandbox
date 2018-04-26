@@ -72,8 +72,10 @@
 }
 
 .grid {
+    border: 1px solid black;
     margin: 0 auto;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 /* clear fix */
