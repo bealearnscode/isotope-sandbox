@@ -71,6 +71,11 @@
     outline: rgb(59, 153, 252) auto 5px;
 }
 
+.grid {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 /* clear fix */
 .grid:after {
   content: '';
@@ -78,47 +83,19 @@
   clear: both;
 }
 
-/* ---- .element-item ---- */
-
-/* 5 columns, percentage width */
-.card,
-.grid-sizer {
-  width: 20%;
-}
-
-.card {
+.grid-item {
     background-color: #000; /*bg will be a photo on ESU site*/
     border: none;
     border-radius: 0;
     box-shadow: none;
-    float: left;
+    margin: 1rem 0.9375rem;
     max-width: 253px;
-  /*height: 100px;*/
+    overflow: hidden;
 }
-
-/*.grid {*/
-/*    border: 1px solid black;*/
-/*    overflow: hidden;*/
-/*}*/
-
-
-/*.grid.-item {*/
-/*    background-color: #000; //bg will be a photo on ESU site*/
-/*    border: none;*/
-/*    border-radius: 0;*/
-/*    box-shadow: none;*/
-/*    margin: 1rem 0.9375rem;*/
-/*    max-width: 253px;*/
-/*    overflow: hidden;*/
-/*}*/
 
 .card-section {
     border: 1px solid black;
     height: 105px;
-}
-
-.long-title a {
-    font-size: 1rem;
 }
 
 h3 a {
@@ -133,7 +110,12 @@ h3 a {
     margin: 0;
 }
 
-h3 a:hover {
+.long-title a {
+    font-size: 1rem;
+}
+
+h3 a:hover,
+.long-title a:hover {
     color: #000;
     text-decoration: none;
 }
@@ -154,3 +136,45 @@ h3 a:hover {
           font-size:0.750rem;
       }
 }
+
+/*.grid-item {*/
+/*    background-color: #000; //bg will be a photo on ESU site*/
+/*    display: block;*/
+/*    margin-bottom: 32px;*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    margin: 12.5px;*/
+    /*padding: 15px 7.5px;*/
+    
+/*}*/
+
+
+
+
+
+
+
+
+/* clear fix */
+/*.grid:after {*/
+/*  content: '';*/
+/*  display: block;*/
+/*  clear: both;*/
+/*}*/
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+/*.card,*/
+/*.grid-sizer {*/
+/*  width: 20%;*/
+/*}*/
+
+
+
+
+
+
+
+
+
