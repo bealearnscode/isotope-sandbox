@@ -29,22 +29,19 @@
 //     });
 // });
 
-
-
-
-
-
-$(function(){
-
-  let $grid = $('.grid'),
-      $checkboxes = $('.filter-checkbox-group input');
+$(document).ready(function(){
+  var $container = $('.grid');
+  var $checkboxes = $('.filter-checkbox-group input');
   
-  $grid.isotope({
-    itemSelector: '.grid-item',
-    masonry: {
-        isFitWidth: true
-    }
-  });
+  $container.imagesLoaded(function() {
+    $container.isotope({
+      itemSelector: '.grid-item',
+      layoutMode: 'masonry',
+      masonry: {
+          isFitWidth: true
+      }
+    });
+  }); 
   
   $checkboxes.change(function(){
     let filters = [];
@@ -54,10 +51,45 @@ $(function(){
     });
     // ['.undergraduate', '.minor'] -> '.undergraduate, .minor'
     filters = filters.join(', ');
-    $grid.isotope({ filter: filters });
+    $container.isotope({ filter: filters });
   });
-
 });
+
+var masonryUpdate = function() { 
+    setTimeout(function() { 
+        $('.grid').isotope(); 
+    }, 50); 
+} 
+$(document).ajaxComplete(masonryUpdate); 
+$(document).on('click', masonryUpdate);
+
+
+
+
+// $(function(){
+
+//   let $grid = $('.grid'),
+//       $checkboxes = $('.filter-checkbox-group input');
+  
+//   $grid.isotope({
+//     itemSelector: '.grid-item',
+//     masonry: {
+//         isFitWidth: true
+//     }
+//   });
+  
+//   $checkboxes.change(function(){
+//     let filters = [];
+//     // get value of checked boxes
+//     $checkboxes.filter(':checked').each(function(){
+//       filters.push( this.value );
+//     });
+//     // ['.undergraduate', '.minor'] -> '.undergraduate, .minor'
+//     filters = filters.join(', ');
+//     $grid.isotope({ filter: filters });
+//   });
+
+// });
 
 // $('.filter-button-group').on( 'click', 'button', function() {
 //         var filterValue = $(this).attr('data-filter');
