@@ -92,7 +92,6 @@
     box-shadow: none;
     margin: 1rem 0.9375rem;
     max-width: 253px;
-    overflow: hidden;
 }
 
 .card-section {
@@ -110,7 +109,6 @@ h3 a {
     display: block;
     text-align: center;
     text-decoration: underline;
-    margin: 0.5rem 0;
 }
 
 .long-title a {
