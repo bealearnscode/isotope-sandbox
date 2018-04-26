@@ -8,6 +8,7 @@ $(document).ready(function(){
       layoutMode: 'masonry',
       masonry: {
           isFitWidth: true,
+          isInitLayout: true
       }
     });
   }); 
@@ -19,10 +20,10 @@ $(document).ready(function(){
       filters.push( this.value );
     });
     // ['.undergraduate', '.minor'] -> '.undergraduate, .minor'
-    if(filters.length == 0) {
+    if(filters.length == 0){
      filters = []; 
     }
-    else {
+    else{
         filters = filters.join(', ');
     }
     $container.isotope({ filter: filters });
