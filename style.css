@@ -109,6 +109,7 @@ h3 a {
     display: block;
     text-align: center;
     text-decoration: underline;
+    white-space: pre-line;
 }
 
 .long-title a {
