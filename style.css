@@ -98,6 +98,7 @@
 .card-section {
     border: 1px solid black;
     height: 105px;
+    padding: 1.25rem;
 }
 
 h3 a {
@@ -109,7 +110,7 @@ h3 a {
     display: block;
     text-align: center;
     text-decoration: underline;
-    margin: 0;
+    margin: 0.5rem 0;
 }
 
 .long-title a {
