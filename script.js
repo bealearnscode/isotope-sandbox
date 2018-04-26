@@ -7,7 +7,7 @@ $(document).ready(function(){
       itemSelector: '.grid-item',
       layoutMode: 'masonry',
       masonry: {
-          isFitWidth: true
+          isFitWidth: true,
       }
     });
   }); 
@@ -19,7 +19,12 @@ $(document).ready(function(){
       filters.push( this.value );
     });
     // ['.undergraduate', '.minor'] -> '.undergraduate, .minor'
-    filters = filters.join(', ');
+    if(filters.length == 0) {
+     filters = []; 
+    }
+    else {
+        filters = filters.join(', ');
+    }
     $container.isotope({ filter: filters });
   });
 });
