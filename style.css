@@ -101,17 +101,13 @@
 h3 a {
     color: #000;
     float: none;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 20px;
     display: block;
     text-align: center;
     text-decoration: underline;
     white-space: pre-line;
-}
-
-.long-title a {
-    font-size: 1rem;
 }
 
 h3 a:hover,
