@@ -110,8 +110,7 @@ h3 a {
     white-space: pre-line;
 }
 
-h3 a:hover,
-.long-title a:hover {
+h3 a:hover {
     color: #000;
     text-decoration: none;
 }
