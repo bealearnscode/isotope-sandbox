@@ -4,13 +4,6 @@
     text-transform: uppercase;
 }
 
-.checkbox-group input,
-.inline-field label {
-  display: inline-block;
-  margin-bottom: 0; /* I added this after I posted my reply */
-  vertical-align: middle; /* Fixes any weird issues in Firefox and IE */
-}
-
 .checkbox-group {
   /*margin: 0 auto;*/
   padding: 0 9rem;
@@ -20,6 +13,13 @@
   content: '';
   display: inline-block;
   clear: both;
+}
+
+.checkbox label,
+.checkbox input[type="checkbox"] {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle; /* Fixes any weird issues in Firefox and IE */
 }
 
 .checkbox input[type="checkbox"] {
