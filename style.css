@@ -33,6 +33,10 @@
     padding-left: 10px;
 }
 
+.hidden {
+    display: none;
+}
+
 .grid {
     margin: 0 auto;
     overflow: hidden;
