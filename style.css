@@ -4,14 +4,18 @@
     text-transform: uppercase;
 }
 
+.checkbox-group {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
 .first-checkbox-group {
-  margin: 5% auto;
+  margin-top: 5%;
   margin-bottom: 0px;
-  /*padding: 0 15%;*/
 }
 
 .checkbox-group:after {
-  content: '';
+ content: '';
   display: inline-block;
   clear: both;
 }
