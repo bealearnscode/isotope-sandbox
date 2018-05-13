@@ -4,8 +4,9 @@
     text-transform: uppercase;
 }
 
-.checkbox-group {
-  margin: 0 auto;
+.first-checkbox-group {
+  margin: 5% auto;
+  margin-bottom: 0px;
   /*padding: 0 15%;*/
 }
 
